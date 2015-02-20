@@ -1,0 +1,251 @@
+/**
+Stylesheet: Slideshow.css
+	CSS for Slideshow.
+License:
+	MIT-style license.
+Copyright:
+	Copyright (c) 2008 [Aeron Glemann](http://www.electricprism.com/aeron/).
+HTML:
+	<div class="sunshineufsolarcharger">
+		<div class="sunshineufsolarcharger-images" />
+		<div class="sunshineufsolarcharger-captions" />
+		<div class="sunshineufsolarcharger-controller" />
+		<div class="sunshineufsolarcharger-loader" />
+		<div class="sunshineufsolarcharger-thumbnails" />
+	</div>
+Notes:
+	These next four rules are set by the Slideshow script.
+	You can override any of them with the !important keyword but the slideshow probably will not work as intended.
+*/
+.sunshineufsolarcharger {
+	display: block;
+	position: relative;
+	z-index: 0;
+	background-color: #ffffff;
+}
+.sunshineufsolarcharger-images {
+	display: block;
+	overflow: hidden;
+	position: relative;
+}		
+.sunshineufsolarcharger-images img {
+	display: block;
+	position: absolute;
+	z-index: 1;
+}		
+.sunshineufsolarcharger-thumbnails {
+	overflow: hidden;
+}
+/**
+HTML:
+	<div class="sunshineufsolarcharger-images">
+		<img />
+		<img />
+	</div>
+Notes:
+	The images div is where the slides are shown.
+	Customize the visible / prev / next classes to effect the slideshow transitions: fading, wiping, etc.
+*/
+.sunshineufsolarcharger-images {
+	height: 300px;
+	width: 400px;
+}		
+.sunshineufsolarcharger-images-visible { 
+	opacity: 1;
+}	
+.sunshineufsolarcharger-images-prev { 
+	opacity: 0; 
+}
+.sunshineufsolarcharger-images-next { 
+	opacity: 0; 
+}
+.sunshineufsolarcharger-images img {
+	float: left;
+	left: 0;
+	top: 0;
+}	
+/**
+Notes:
+	These are examples of user-defined styles.
+	Customize these classes to your usage of Slideshow.
+*/
+.sunshineufsolarcharger {
+	height: 300px;
+	width: 400px;
+	margin-right: 90px;
+}
+.sunshineufsolarcharger a img {
+	border: 0;
+}
+/**
+HTML:
+	<div class="sunshineufsolarcharger-controller">
+		<ul>
+			<li class="first"><a /></li>
+			<li class="prev"><a /></li>
+			<li class="pause play"><a /></li>
+			<li class="next"><a /></li>
+			<li class="last"><a /></li>
+		</ul>
+	</div>
+Notes:
+	Customize the hidden / visible classes to affect the controller animation.
+*/
+.sunshineufsolarcharger-controller {
+	background: url(controller.png) no-repeat;
+	height: 42px;
+	left: 50%;
+	margin: -21px 0 0 -119px;
+	overflow: hidden;
+	position: absolute;
+	top: 50%;
+	width: 238px;
+	z-index: 10000;
+}
+.sunshineufsolarcharger-controller * {
+	margin: 0;
+	padding: 0;
+}
+.sunshineufsolarcharger-controller-hidden { 
+	opacity: 0;
+}
+.sunshineufsolarcharger-controller-visible {
+	opacity: 1;
+}
+.sunshineufsolarcharger-controller a {
+	cursor: pointer;
+	display: block;
+	height: 18px;
+	overflow: hidden;
+	position: absolute;
+	top: 12px;
+}
+.sunshineufsolarcharger-controller a.active {
+	background-position: 0 18px;
+}
+.sunshineufsolarcharger-controller li {
+	list-style: none;
+}
+.sunshineufsolarcharger-controller li.first a {
+	background-image: url(controller-first.gif);
+	left: 33px;
+	width: 19px;
+}
+.sunshineufsolarcharger-controller li.last a {
+	background-image: url(controller-last.gif);
+	left: 186px;
+	width: 19px;
+}
+.sunshineufsolarcharger-controller li.next a {
+	background-image: url(controller-next.gif);
+	left: 145px;
+	width: 28px;
+}
+.sunshineufsolarcharger-controller li.pause a {
+	background-image: url(controller-pause.gif);
+	left: 109px;
+	width: 20px;
+}
+.sunshineufsolarcharger-controller li.play a {
+	background-position: 20px 0;
+}
+.sunshineufsolarcharger-controller li.play a.active {
+	background-position: 20px 18px;
+}
+.sunshineufsolarcharger-controller li.prev a {
+	background-image: url(controller-prev.gif);
+	left: 65px;
+	width: 28px;
+}
+/**
+HTML:
+	<div class="sunshineufsolarcharger-loader" />
+Notes:
+	Customize the hidden / visible classes to affect the loader animation.
+*/
+.sunshineufsolarcharger-loader {
+	height: 28px;
+	right: 0;
+	position: absolute;
+	top: 0;
+	width: 28px;
+	z-index: 10001;
+}
+.sunshineufsolarcharger-loader-hidden {
+	opacity: 0;
+}
+.sunshineufsolarcharger-loader-visible {
+	opacity: 1;
+}
+/**
+HTML:
+	<div class="sunshineufsolarcharger-thumbnails">
+		<ul>
+			<li><a class="sunshineufsolarcharger-thumbnails-active" /></li>
+			<li><a class="sunshineufsolarcharger-thumbnails-inactive" /></li>
+			...
+			<li><a class="sunshineufsolarcharger-thumbnails-inactive" /></li>
+		</ul>
+	</div>
+Notes:
+	Customize the active / inactive classes to affect the thumbnails animation.
+	Use the !important keyword to override FX without affecting performance.
+*/
+.sunshineufsolarcharger-thumbnails * {
+	margin: 0;
+	padding: 0;
+}
+.sunshineufsolarcharger-thumbnails {
+	position: absolute;
+}
+.sunshineufsolarcharger-thumbnails ul {
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+.sunshineufsolarcharger-thumbnails li {
+	float: left;
+	list-style: none;
+	position: relative;
+}
+.sunshineufsolarcharger-thumbnails {
+	height: 300px;
+	left: auto;
+	right: -90px;
+	top: 0;
+	width: 90px;
+}
+.sunshineufsolarcharger-thumbnails ul {
+	height: 10000px;
+	width: 90px;
+	padding-left: 2px;
+}
+.sunshineufsolarcharger-thumbnails li {
+	margin: 2px 0px 0px 0px;
+}
+.sunshineufsolarcharger-thumbnails img {
+	width: 76px;
+	height: auto;
+}
+.sunshineufsolarcharger-thumbnails a {
+	display: block;
+	float: left;
+	padding: 5px;
+	position: relative; 
+	border: 1px #999999 solid;
+}
+.sunshineufsolarcharger-thumbnails a:hover {
+	background-color: #ffffff !important;
+	opacity: 1 !important;
+}
+.sunshineufsolarcharger-thumbnails img {
+	display: block;
+}
+.sunshineufsolarcharger-thumbnails-active {
+	background-color: #ffffff;
+	opacity: 1;
+}
+.sunshineufsolarcharger-thumbnails-inactive {
+	background-color: #ffffff;
+	opacity: 0.5;
+}
