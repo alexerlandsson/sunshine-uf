@@ -1,4 +1,4 @@
-> ⌛️ This is an archived repository.
+> 📁 This is an archived repository.
 
 # Sunshine UF
 
