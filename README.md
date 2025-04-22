@@ -1,6 +1,7 @@
-# Sunshine UF
+# Sunshine UF Archive
 
-This website archives versions of Sunshine UF’s websites and business plans. The purpose of the project is to preserve the source code for sentimental reasons.
+> [!Note]
+> This repository is an archives of Sunshine UF’s websites and business plans. The purpose of the project is to preserve the source code for sentimental reasons.
 
 ## Background
 Sunshine UF was a company founded by me and a group of classmates as part of the UF (Young Enterprise) program at Tranemo Gymnasieskola. We sourced and sold portable solar-powered device chargers. Over the course of the two-semester project, we created several versions of our website. The final version even won an award for Best Website at the local UF fair (Ung Företagsamhet Älvsborg).
