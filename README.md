@@ -1,6 +1,9 @@
 # Sunshine UF
 
-This is a website used to list versions of Sunshine UF:s websites and business plans. The purpose of this project is to store the source code of sentimental reasons.
+This website archives versions of Sunshine UF’s websites and business plans. The purpose of the project is to preserve the source code for sentimental reasons.
 
-> [!NOTE]
-> Sunshine UF was our UF company me and some classmates created during the UF course in high school (Tranemo Gymnasieskola). We sourced and sold portable device chargers powered by sunlight. During the project's life span of two semesters we've had multiple versions of the websites and the final one even won price during the local UF fair (Ung Företagsamhet Älvsborg) for best website.
+## Background
+Sunshine UF was a company founded by me and a group of classmates as part of the UF (Young Enterprise) program at Tranemo Gymnasieskola. We sourced and sold portable solar-powered device chargers. Over the course of the two-semester project, we created several versions of our website. The final version even won an award for Best Website at the local UF fair (Ung Företagsamhet Älvsborg).
+
+## Web development
+This project was my first project reagarding web development. I made this during a course in Web Development and learned along the way. This is what laid the ground for me and pushed me in the direction of becoming a front-end developer. Most of the code was written directly in *TextEdit* before I later moved on to *Adobe Dreamweaver*.
